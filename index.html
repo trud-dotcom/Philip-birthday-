@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Happy Birthday Philip 🎂</title>
+
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #111827, #374151);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .card {
+      width: 85%;
+      max-width: 500px;
+      padding: 40px 25px;
+      border-radius: 25px;
+      background: rgba(255,255,255,0.12);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+      animation: appear 1.5s ease;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-top: 5px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    .cake {
+      font-size: 70px;
+      animation: bounce 1.5s infinite;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 14px 25px;
+      border: none;
+      border-radius: 30px;
+      background: white;
+      color: #111827;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    #secret {
+      display: none;
+      margin-top: 25px;
+      font-size: 17px;
+    }
+
+    @keyframes appear {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-12px);
+      }
+    }
+
+    .confetti {
+      position: fixed;
+      top: -20px;
+      font-size: 20px;
+      animation: fall 5s linear infinite;
+    }
+
+    @keyframes fall {
+      to {
+        transform: translateY(110vh) rotate(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="confetti" style="left:10%;">🎉</div>
+  <div class="confetti" style="left:30%; animation-delay:1s;">✨</div>
+  <div class="confetti" style="left:50%; animation-delay:2s;">🎊</div>
+  <div class="confetti" style="left:70%; animation-delay:0.5s;">✨</div>
+  <div class="confetti" style="left:90%; animation-delay:1.5s;">🎉</div>
+
+  <div class="card">
+
+    <div class="cake">🎂</div>
+
+    <h1>Happy Birthday!</h1>
+
+    <h2>Philip Kwame Frimpong Ofori 🥳</h2>
+
+    <p>
+      Today is all about celebrating YOU.
+      I hope this new chapter brings you happiness,
+      success, peace and plenty of unforgettable memories.
+    </p>
+
+    <p>
+      Thank you for being such an amazing friend.
+      Keep being yourself, keep growing,
+      and never forget how far you've come. ❤️
+    </p>
+
+    <button onclick="showMessage()">Click for a little surprise 🎁</button>
+
+    <div id="secret">
+      🎉 SURPRISE! 🎉<br><br>
+      May 13th September always be a reminder
+      that someone very special came into this world. 😂❤️
+      <br><br>
+      Have an amazing birthday, Philip! 🥂🎂
+    </div>
+
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("secret").style.display = "block";
+    }
+  </script>
+
+</body>
+  </html>
